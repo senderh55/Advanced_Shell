@@ -1,6 +1,6 @@
 # Advanced_Shell
 
-UNIX shell upgrade - An assignment in an operating systems course.
+UNIX shell upgrade - An assignment for operating systems course.
 
 The goal of the program is to create 6 more commands beyond the existing shell,
 the additional commands are for creating, answering and testing exams.
