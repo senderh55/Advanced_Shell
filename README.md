@@ -10,4 +10,14 @@ The program demonstrate the use of processes and the use of System Calls like op
 Advanced_shell.c is the main program that get the user input and use exec to run the commands.
 
 ## Commands
-* CreateExam - accepts three parameters: name, subject and the writer of the exam and run `CreateExam.c`.
+* CreateExam - accepts three parameters: name, subject and the writer of the exam, the command will run `CreateExam.c`.
+After getting the user input for the desired number of questions, the user writes the questions with 4 answers for every question.
+All the questions and the answers will be written to a text file called `examName.txt` (according to the exam name input).
+
+* SolExam - accepts one parameter - the name of the exam, the command will run `SolExam.c`.
+The program asks the user to enter the correct answer number for each question in order.
+All the correct answers by questions order will be written to a text file called `SOL_examName.txt` (according to the exam name input).
+
+* StartExam - accepts Two parameters - the name of the exam and the name of the student, the command will run `StartExam.c`.
+The program print the exam to the shell, and waiting for user (student) input - the number of the question and the answer option.
+After the student answering on all of the questiosn, the input will be written to a text file called `examName_StudentName.txt` (according to command inputs).
