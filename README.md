@@ -27,4 +27,4 @@ After comparing, the number of the currect answers of the students and the numbe
 * CalcGrade - accepts two parameters: the name of the exam and the name of the student, the command will run `CalcGrade.c`.
 The program open the the file that were created in CheckExam command, calculate the final score and add it to the openned file.
 
-* Goodbye -this command will exit the Advanced shell and will return to the original shell
+* Goodbye - this command will exit the Advanced shell and will return to the original shell
