@@ -14,10 +14,19 @@ Advanced_shell.c is the main program that get the user input and use exec to run
 After getting the user input for the desired number of questions, the user writes the questions with 4 answers for every question.
 All the questions and the answers will be written to a text file called `examName.txt` (according to the exam name input).
 
-* SolExam - accepts one parameter - the name of the exam, the command will run `SolExam.c`.
+* SolExam - accepts one parameter: the name of the exam, the command will run `SolExam.c`.
 The program asks the user to enter the correct answer number for each question in order.
-All the correct answers by questions order will be written to a text file called `SOL_examName.txt` (according to the exam name input).
+All the correct answers by questions order will be written to a text file called `SOL_examName.txt`.
 
-* StartExam - accepts Two parameters - the name of the exam and the name of the student, the command will run `StartExam.c`.
-The program print the exam to the shell, and waiting for user (student) input - the number of the question and the answer option.
-After the student answering on all of the questiosn, the input will be written to a text file called `examName_StudentName.txt` (according to command inputs).
+* StartExam - accepts two parameters: the name of the exam and the name of the student, the command will run `StartExam.c`.
+The program prints the exam to the shell, and waits for user (student) input - the number of the question and the answer option.
+After the student answering on all of the questions, the input will be written to a text file called `examName_StudentName.txt`.
+
+* CheckExam - accepts two parameters: the name of the exam and the name of the student, the command will run `CheckExam.c`.
+The program compares between the student answers with the correct answers according the solution file that were created at `SolExam` command.
+After comparing, the number of the currect answers of the students and the number of questions will be written to a text file called `Grade_studentName_examName.txt`
+
+* CalcGrade - accepts two parameters: the name of the exam and the name of the student, the command will run `CalcGrade.c`.
+The program open the the file that were created in CheckExam command, calculate the final score and add it to the openned file.
+
+* Goodbye -this command will exit the Advanced shell and will return to the original shell
