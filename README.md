@@ -3,8 +3,8 @@
 UNIX shell upgrade - An assignment in an operating systems course.
 
 The goal of the program is to create 6 more commands beyond the existing shell,
-the additional commands are for building, answering and testing exams.
-These commands use system calls such as open, read, write and exec.
+the additional commands are for creating, answering and testing exams.
+These commands use processes and system calls such as open, read, write and exec.
 'Advanced_shell.c' is the main program that use exec system call accoring to the user input.
 
 ## Commands
